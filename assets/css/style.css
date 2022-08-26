@@ -1,0 +1,717 @@
+
+  
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Zabal';
+}
+
+
+/*  Load ZABAL Font */
+@font-face {
+    font-family: "Zabal";
+    src: url('/assets/font/zabal-regular.otf'),
+         url('/assets/font/zabal-bold.otf');
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Zabal";
+    src: url('/assets/font/zabal-bold.otf');
+    font-weight: 600;
+}
+
+
+/* Common CSS */
+.theme-btn a {
+    background: #F13A9E;
+    padding: 22px 30px;
+    border-radius: 80px;
+    color: #ffffff;
+    font-size: 18px;
+    text-decoration: none;
+    transition: 400ms ease;
+    text-transform: capitalize;
+    text-decoration: none;
+    display: inline-block;
+}
+.theme-btn a:hover {
+    background: #bd317d;
+    color: #ffffff;
+}
+
+p {
+    font-size: 20px;
+}
+
+.d-table {
+    width: 100%;
+    height: 100%;
+}
+
+.d-table-cell {
+    vertical-align: middle;
+}
+
+img {
+    max-width: 100%;
+}
+
+.section-title h2 {
+    font-size: 38px;
+    color: #000000;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+/* Navbar CSS Start */
+.main-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 9999;
+    transition: .5s;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.main-nav .navbar {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.main-nav .navbar .navbar-nav .nav-item .nav-link {
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px;
+}
+
+.main-nav .navbar .navbar-brand img {
+    transition: .5s;
+}
+
+.main-nav .navbar .theme-btn {
+    margin-left: 25px;
+}
+
+.nav-shrink {
+    background-color: #2D032A;
+    box-shadow: 0 10px 27px 0 rgb(14 8 18 / 50%);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #453d3d;
+}
+
+.nav-shrink .navbar-brand img {
+    max-width: 150px;
+}
+
+.nav-shrink .navbar .theme-btn a {
+    padding: 10px 20px;
+}
+
+/* Navbar CSS End */
+
+
+/* Banner CSS Start */
+.banner-section {
+    height: 100vh;
+    background: linear-gradient(166deg, rgba(67,37,0,1) 0%, rgba(33,16,68,1) 35%, rgba(0,54,52,1) 100%);
+    position: relative;
+}
+
+.banner-text h2 {
+    color: #ffffff;
+    font-size: 67px;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.banner-text h2 .circle {
+    position: relative;
+}
+
+.banner-text h2 .circle::before {
+    position: absolute;
+    content: '';
+    left: -16px;
+    top: -10px;
+    width: 120%;
+    height: 130%;
+    border-radius: 50%;
+    transform: rotate(10deg);
+    border: 4px solid #63F9F2;
+    animation: color-change 2s infinite;
+}
+
+.banner-text p {
+    color: #F1F1F1;
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+.banner-text .theme-btn a {
+    margin-top: 25px;
+    background: #7423C6;
+}
+
+.banner-illustration {
+    position: absolute;
+    bottom: 15px;
+    right: 10%;
+}
+
+.illustration-img {
+    position: relative;
+    height: 500px;
+    min-width: 700px;
+}
+
+.illustration-img img {
+    position: absolute;
+}
+
+.illustration-img img:nth-child(1) {
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.illustration-img img:nth-child(2) {
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.illustration-img img:nth-child(3) {
+    left: 30%;
+    top: 35%;
+}
+
+.illustration-img img:nth-child(4) {
+    right: 0;
+    top: -35%;
+    left: 0;
+    margin: auto;
+}
+
+.waves {
+    position: absolute;
+    width: 100%;
+    max-height: 70px;
+    bottom: 0;
+    left: 0;
+}
+.parallax>use {
+    animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
+}
+
+.parallax>use:nth-child(1) {
+    animation-delay: -3s;
+    animation-duration: 6s;
+    fill: #8758E7;
+}
+
+.parallax>use:nth-child(2) {
+    /* animation-delay: -4s; */
+    animation-duration: 6s;
+    fill: #FF38A5;
+}
+
+/* Banner CSS End */
+
+
+/* Why CSS Start */
+.why-section {
+    padding-top: 200px;
+    padding-bottom: 70px;
+    position: relative;
+}
+
+.why-text p {
+    margin-bottom: 30px;
+}
+
+.why-text .theme-btn a {
+    margin-top: 20px;
+    background: #7423C6;
+}
+
+.why-bg {
+    background-image: url(../img/why/bg.png);
+    background-size: cover;
+    background-position: center center;
+    position: absolute;
+    top: 20%;
+    width: 600px;
+    height: 500px;
+    left: 10%;
+    z-index: -1;
+}
+
+.why-img {
+    width: 500px;
+    height: 450px;
+    margin: 0 auto 30px;
+}
+
+.why-illustration {
+    position: relative;
+}
+
+.why-illustration img {
+    position: absolute;
+}
+
+.why-illustration img:nth-child(1){
+    left: 0;
+}
+
+.why-illustration img:nth-child(2){
+    top: 0;
+    right: 0;
+}
+
+.why-illustration img:nth-child(3){
+    top: -100px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+/* Why CSS End */
+
+
+/* Brand CSS Start */
+.brand-section {
+    background: linear-gradient(166deg, rgba(67,37,0,1) 0%, rgba(33,16,68,1) 35%, rgba(0,54,52,1) 100%);
+    padding-top: 100px;
+}
+
+.brand-section .section-title {
+    max-width: 530px;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.brand-box {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 120px;
+}
+
+.brand-box .brand-icon {
+    max-width: 90px;
+    margin: 0 auto 55px;
+}
+
+.brand-box p {
+    font-size: 28px;
+    margin-bottom: 0;
+}
+/* Brand CSS End */
+
+
+/* Offer CSS Start */
+.offer-section {
+    padding-top: 130px;
+    padding-bottom: 130px;
+}
+
+.offer-img {
+    max-width: 245px;
+    margin: 0 auto 40px;
+}
+
+.offer-illustration {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    border-bottom: 2px solid #000000;
+}
+.offer-illustration img {
+    margin: 0 5px;
+}
+
+/* Offer CSS End */
+
+
+/* Service CSS Start */
+.service-section {
+    background: linear-gradient(166deg, rgba(67,37,0,1) 0%, rgba(33,16,68,1) 35%, rgba(0,54,52,1) 100%);
+    padding-top: 175px;
+    padding-bottom: 215px;
+}
+
+.service-bg {
+    background-image: url(../img/why/bg.png);
+    background-size: cover;
+    background-position: center center;
+    position: absolute;
+    top: 20%;
+    width: 600px;
+    height: 500px;
+    left: 10%;
+    z-index: -1;
+}
+
+.service-img {
+    width: 500px;
+    height: 450px;
+    margin: 0 auto 30px;
+}
+
+.service-text {
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+.service-text .section-title h2 {
+    color: #ffffff;
+}
+
+.service-text p {
+    margin-bottom: 30px;
+}
+
+.service-text .theme-btn a {
+    margin-top: 20px;
+    background: #7423C6;
+}
+/* Service CSS End */
+
+
+/* Scale CSS Start */
+.scale-section {
+    padding-top: 120px;
+}
+
+.scale-illustration {
+    position: relative;
+    height: 550px;
+}
+
+.scale-illustration img {
+    position: absolute;
+}
+
+.scale-illustration img:nth-child(1) {
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    right: 0;
+}
+
+.scale-illustration img:nth-child(2) {
+    bottom: 11%;
+    left: 23%;
+}
+
+.scale-illustration img:nth-child(3) {
+    bottom: 29%;
+    left: 48px;
+    right: 0;
+    margin: auto;
+}
+/* Scale CSS End */
+
+/* Team CSS Start */
+.team-section {
+    background: linear-gradient(166deg, rgba(67,37,0,1) 0%, rgba(33,16,68,1) 35%, rgba(0,54,52,1) 100%);
+    padding-top: 200px;
+    padding-bottom: 170px;
+}
+
+.team-section .section-title {
+    text-align: center;
+    color: #ffffff;
+    max-width: 845px;
+    margin: 0 auto 40px;
+}
+
+.team-box img {
+    margin-bottom: 30px;
+}
+
+.team-box .team-text {
+    color: #ffffff;
+}
+
+.team-box .team-text h3 {
+    font-size: 28px;
+}
+
+.team-box .team-text p {
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+/* Team CSS End */
+
+/* Meeting CSS Start */
+.meeting-section {
+    padding-top: 220px;
+    padding-bottom: 200px;
+}
+
+.meeting-text {
+    margin-bottom: 30px;
+}
+
+.meeting-text .meeting-top {
+    text-align: center;
+}
+
+.meeting-text .meeting-top p {
+    font-size: 16px;
+    font-weight: 600;
+    color: #464646;
+    margin-top: 15px;
+    margin-bottom: 35px;
+}
+
+.meeting-text .meeting-top h3 {
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.meeting-text .meeting-top h4 {
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.meeting-text p {
+    max-width: 514px;
+    margin: 0 auto 40px;
+}
+
+.calendar {
+    position: relative;
+    max-width: 400px; /*change as per your design need */
+    min-width: 320px;
+    background: var(--calendar-bg-color);
+    color: var(--calendar-font-color);
+    margin: 20px auto;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-weight: normal;
+    border-radius: var(--calendar-border-radius);
+}
+
+.calendar h3 {
+    text-align: center;
+    font-size: 21px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.calendar-inner {
+    padding: 10px 10px;
+}
+
+.calendar .calendar-inner .calendar-body {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+}
+
+.calendar .calendar-inner .calendar-body div {
+    padding: 4px;
+    min-height: 30px;
+    line-height: 30px;
+    border: 1px solid transparent;
+    margin: 10px 2px 0px;
+}
+
+.calendar .calendar-inner .calendar-body div:nth-child(-n+7) {
+    border: 1px solid transparent;
+    border-bottom: 1px solid var(--weekdays-border-bottom-color);
+}
+
+.calendar .calendar-inner .calendar-body div:nth-child(-n+7):hover {
+    border: 1px solid transparent;
+    border-bottom: 1px solid var(--weekdays-border-bottom-color);
+}
+
+.calendar .calendar-inner .calendar-body div>a {
+    color: var(--calendar-font-color);
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+}
+
+.calendar .calendar-inner .calendar-body div:hover {
+    border: 1px solid var(--calendar-date-hover-color);
+    border-radius: 4px;
+}
+
+.calendar .calendar-inner .calendar-body div.empty-dates:hover {
+    border: 1px solid transparent;
+}
+
+.calendar .calendar-inner .calendar-controls {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.calendar .calendar-inner .calendar-today-date {
+    display: grid;
+    text-align: center;
+    cursor: pointer;
+    margin: 3px 0px;
+    background: var(--calendar-current-date-color);
+    padding: 8px 0px;
+    border-radius: 10px;
+    width: 80%;
+    margin: auto;
+}
+
+.calendar .calendar-inner .calendar-controls .calendar-year-month {
+    display: flex;
+    min-width: 100px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.calendar .calendar-inner .calendar-controls .calendar-next {
+    text-align: right;
+}
+
+.calendar .calendar-inner .calendar-controls .calendar-year-month .calendar-year-label,
+.calendar .calendar-inner .calendar-controls .calendar-year-month .calendar-month-label {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.calendar .calendar-inner .calendar-body .calendar-today {
+    background: var(--calendar-today-color);
+    border-radius: 4px;
+}
+
+.calendar .calendar-inner .calendar-body .calendar-today:hover {
+    border: 1px solid transparent;
+}
+
+.calendar .calendar-inner .calendar-body .calendar-today a {
+    outline: 2px solid var(--calendar-today-innerborder-color);
+}
+
+.calendar .calendar-inner .calendar-controls .calendar-next a,
+.calendar .calendar-inner .calendar-controls .calendar-prev a {
+    color: var(--calendar-font-color);
+    font-family: arial, consolas, sans-serif;
+    font-size: 26px;
+    text-decoration: none;
+    padding: 4px 12px;
+    display: inline-block;
+    background: var(--calendar-nextprev-bg-color);
+    margin: 10px 0 10px 0;
+}
+
+.calendar .calendar-inner .calendar-controls .calendar-next a svg,
+.calendar .calendar-inner .calendar-controls .calendar-prev a svg {
+    height: 20px;
+    width: 20px;
+}
+
+.calendar .calendar-inner .calendar-controls .calendar-next a svg path,
+.calendar .calendar-inner .calendar-controls .calendar-prev a svg path{
+    fill: var(--next-prev-arrow-color);
+}
+
+.calendar .calendar-inner .calendar-body .prev-dates,
+.calendar .calendar-inner .calendar-body .next-dates {
+    color: var(--calendar-prevnext-date-color);
+}
+
+.calendar .calendar-inner .calendar-body .prev-dates:hover,
+.calendar .calendar-inner .calendar-body .next-dates:hover {
+  border: 1px solid transparent;
+  pointer-events: none;
+}
+/* Meeting CSS End */
+
+
+/* Question CSS Start */
+.question-section {
+    background: linear-gradient(166deg, rgba(67,37,0,1) 0%, rgba(33,16,68,1) 35%, rgba(0,54,52,1) 100%);
+    padding-top: 110px;
+    padding-bottom: 110px;
+    clip-path: ellipse(120% 100% at 46.5% 100%);
+}
+
+.question-img {
+    margin-bottom: 50px;
+}
+/* Question CSS End */
+
+/* Copyright CSS Start */
+.copyright-area {
+    background: #2D032A;
+    padding: 20px 0;
+    border-top: 1px solid #ffffff;
+}
+
+.copyright-area  p {
+    font-size: 16px;
+}
+
+.copyright-area .text-right {
+    text-align: right;
+}
+/* Copyright CSS End */
+
+.back-to-top {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    display: none;
+    background: #7423C6;
+    border: none;
+    color: #fff;
+    font-size: 14px;
+    height: 50px;
+    line-height: 35px;
+}
+
+.back-to-top:focus {
+    box-shadow: 0 0 0 0 transparent;
+}
+
+.back-to-top:hover {
+    background: #7423C6;
+    color: #ffffff;
+}
+
+
+/* ANIMATIONS */
+
+/* Banner Click Text */
+@keyframes color-change {
+    0% {
+        border: 4px solid #00fff3;
+    }
+
+    50% {
+        border: 4px solid #7423C6;
+    }
+
+    25% {
+        border: 4px solid #00fff3;
+    }
+}
+
+/* Banner Waves */
+@keyframes move-forever {
+    0% {
+        transform: translate3d(-90px, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(85px, 0, 0);
+    }
+}

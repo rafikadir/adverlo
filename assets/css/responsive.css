@@ -1,0 +1,116 @@
+@media only screen and (max-width: 575px) {
+
+    p {
+        font-size: 15px !important;
+    }
+
+    .theme-btn a {
+        padding: 14px 22px;
+        font-size: 12px;
+    }
+
+    /* Navbar CSS */
+    .navbar-brand img {
+        max-width: 150px;
+    }
+
+    .navbar-toggler {
+        border: 1px solid #fff;
+    }
+
+    .navbar-toggler:focus {
+        box-shadow: 0 0 0 0 transparent;
+    }
+
+    .main-nav {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    /* Banner CSS */
+
+    .banner-section {
+        height: 100%;
+        padding-top: 180px;
+        padding-bottom: 375px;
+    }
+
+    .banner-text {
+        text-align: center;
+    }
+    .banner-text h2 {
+        font-size: 32px;
+    }
+
+    .banner-illustration {
+        right: 0;
+    }
+
+    .banner-illustration .illustration-img {
+        min-width: 320px;
+        height: 500px;
+    }
+
+    .illustration-img img:nth-child(1),
+    .illustration-img img:nth-child(2){
+        max-width: 130px;
+    }
+    .illustration-img img:nth-child(4) {
+        top: 40%;
+        max-width: 260px;
+    }
+
+    .illustration-img img:nth-child(3){
+        left: 40%;
+        top: 75%;
+        max-width: 50px;
+    }
+
+    .banner-text h2 .circle::before {
+        left: -8px;
+        top: -6px;
+        width: 120%;
+    }
+
+
+    /* Service CSS */
+    .service-bg {
+       width: 320px;
+       height: 320px;
+       display: none;
+    }
+
+    .service-img {
+        width: 320px;
+    }
+
+    /* Why CSS */
+    .why-bg {
+        width: 320px;
+        height: 320px;
+        display: none;
+    }
+
+    .why-img {
+        width: 320px;
+    }
+
+    /* Offer Img */
+    .offer-illustration img:nth-child(1),
+    .offer-illustration img:nth-child(5),
+    .offer-illustration img:nth-child(6),
+    .offer-illustration img:nth-child(7),
+    .offer-illustration img:nth-child(8) {
+        display: none;
+    }
+
+    .offer-illustration img {
+        margin: 0 0px;
+        max-width: 130px;
+    }
+
+    /* Meeting */
+    .calendar {
+        min-width: 300px;
+    }
+}
