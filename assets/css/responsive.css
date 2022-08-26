@@ -9,13 +9,23 @@
         font-size: 12px;
     }
 
+    .section-title h2 {
+        font-size: 26px;
+    }
+
     /* Navbar CSS */
     .navbar-brand img {
         max-width: 150px;
     }
 
+    .main-nav .navbar {
+        padding-top: 0;
+        padding-bottom: 15px;
+    }
+
     .navbar-toggler {
-        border: 1px solid #fff;
+        color: #fff;
+        font-size: 24px;
     }
 
     .navbar-toggler:focus {
@@ -23,8 +33,16 @@
     }
 
     .main-nav {
-        padding-top: 10px;
-        padding-bottom: 10px;
+        padding:0px;
+    }
+
+    .main-nav .navbar .navbar-nav .nav-item .nav-link {
+        padding: 10px 0;
+        font-size: 14px;
+    }
+
+    .main-nav .navbar .theme-btn {
+        margin-left: 0;
     }
 
     /* Banner CSS */
@@ -57,7 +75,7 @@
     }
     .illustration-img img:nth-child(4) {
         top: 40%;
-        max-width: 260px;
+        max-width: 200px;
     }
 
     .illustration-img img:nth-child(3){
@@ -71,28 +89,57 @@
         top: -6px;
         width: 120%;
     }
-
-
-    /* Service CSS */
-    .service-bg {
-       width: 320px;
-       height: 320px;
-       display: none;
-    }
-
-    .service-img {
-        width: 320px;
-    }
+   
 
     /* Why CSS */
+    .why-section {
+        padding-top: 100px;
+        padding-bottom: 20px;
+    }
+    .why-text {
+        text-align: center;
+    }
+
     .why-bg {
         width: 320px;
         height: 320px;
         display: none;
     }
-
     .why-img {
-        width: 320px;
+        width: 280px;
+        margin: auto;
+        padding-top: 70px;
+        height: 350px;
+    }
+
+    .why-illustration img:nth-child(1) {
+        left: 20px;
+        max-width: 140px;
+    }
+
+    .why-illustration img:nth-child(2) {
+        right: 15%;
+        max-width: 100px;
+        top: 20px;
+    }
+   
+    .why-illustration img:nth-child(3) {
+        top: -30px;
+        max-width: 30px;
+    }
+
+    /* Brand CSS */
+    .brand-section {
+        padding-top: 70px;
+    }
+
+    .brand-box {
+        margin-bottom: 60px;
+    }
+
+    .brand-box .brand-icon {
+        max-width: 60px;
+        margin: 0 auto 21px;
     }
 
     /* Offer Img */
@@ -104,13 +151,115 @@
         display: none;
     }
 
+    .offer-illustration img:nth-child(2) {
+        max-width: 100px;
+    }
+
+    .offer-illustration img:nth-child(3) {
+        max-width: 70px;
+    }
+
+    .offer-illustration img:nth-child(4) {
+        max-width: 60px;
+    }
+
     .offer-illustration img {
         margin: 0 0px;
         max-width: 130px;
     }
 
+    .offer-section {
+        padding: 50px 0;
+    }
+
+    /* Service CSS */
+    .service-section {
+        padding: 50px 0;
+    }
+
+    .service-bg {
+        width: 320px;
+        height: 320px;
+        display: none;
+     }
+ 
+    .service-img {
+        width: 250px;
+        margin: auto;
+        height: 370px;
+    }
+
+    .service-text {
+        text-align: center;
+    }
+
+
+    /* Scale CSS */
+    .scale-section {
+        padding-top: 50px;
+    }
+
+    /* Scale CSS */
+    .scale-illustration {
+        height: 250px;
+    }
+
+    .scale-illustration img:nth-child(2) {
+        bottom: 6%;
+        left: 25px;
+        max-width: 80px;
+    }
+
+    .scale-illustration img:nth-child(3) {
+        bottom: 21%;
+        left: 0px;
+        max-width: 124px;
+    }
+
+    /* Team CSS */
+    .team-section {
+        padding: 50px 0;
+    }
+
+    .team-box .team-text h3 {
+        font-size: 15px !important;
+    }
+
+    .team-box .team-text p {
+        font-size: 9px !important;
+    }
+
     /* Meeting */
     .calendar {
         min-width: 300px;
+    }
+
+    .meeting-section {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .meeting-text .meeting-top p {
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+
+    .meeting-text p {
+        text-align: center
+    }
+
+    /* Question CSS */
+    .question-section {
+        clip-path: none;
+        padding: 50px 0;
+    }
+
+    .question-section p {
+        font-size: 14px;
+    }
+
+    /* Copyright CSS */
+    .copyright-area {
+        text-align: center;
     }
 }
