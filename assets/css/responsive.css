@@ -913,7 +913,7 @@
     }
 }
 
-@media only screen and (min-width:1200px) and (max-width: 1399px) {
+@media only screen and (min-width:1200px) and (max-width: 1599px) {
     p {
         font-size: 20px !important;
     }
@@ -965,7 +965,28 @@
 
     .banner-illustration .illustration-img {
         height: 500px;
-        min-width: 690px;
+        min-width: 665px;
+    }
+
+    .illustration-img img:nth-child(1) {
+        max-width: 220px;
+        left: 5%;
+    }
+
+    .illustration-img img:nth-child(2) {
+        max-width: 280px;
+        right: 8%;
+    }
+
+    .illustration-img img:nth-child(3) {
+        max-width: 220px;
+        left: 35%;
+        top: 45%;
+    }
+
+    .illustration-img img:nth-child(4) {
+        max-width: 350px;
+        top: -4%;
     }
 
     .banner-text h2 .circle::before {
