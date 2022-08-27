@@ -22,6 +22,8 @@ $(document).ready(function(){
     return false;
 });
 
+// AOS
+AOS.init();
 
 
 

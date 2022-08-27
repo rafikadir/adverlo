@@ -20,7 +20,7 @@
 
     .main-nav .navbar {
         padding-top: 0;
-        padding-bottom: 15px;
+        padding-bottom: 5px;
     }
 
     .navbar-toggler {
@@ -62,11 +62,14 @@
 
     .banner-illustration {
         right: 0;
+        left: 0;
     }
 
     .banner-illustration .illustration-img {
         min-width: 320px;
         height: 500px;
+        max-width: 320px;
+        margin: auto;
     }
 
     .illustration-img img:nth-child(1),
@@ -103,8 +106,12 @@
     .why-bg {
         width: 320px;
         height: 320px;
-        display: none;
+        top: inherit;
+        bottom: 20px;
+        left: 0;
+        right: 0;
     }
+
     .why-img {
         width: 280px;
         margin: auto;
@@ -118,7 +125,7 @@
     }
 
     .why-illustration img:nth-child(2) {
-        right: 15%;
+        right: 10%;
         max-width: 100px;
         top: 20px;
     }
@@ -241,7 +248,7 @@
 
     .meeting-text .meeting-top p {
         margin-top: 10px;
-        margin-bottom: 15px;
+        margin-bottom: 10px;
     }
 
     .meeting-text p {
@@ -262,4 +269,715 @@
     .copyright-area {
         text-align: center;
     }
+
+    .copyright-area .text-right {
+        text-align: inherit;
+    }
 }
+
+
+@media only screen and (min-width:576px) and (max-width:767px) {
+    p {
+        font-size: 15px !important;
+    }
+
+    .theme-btn a {
+        padding: 14px 22px;
+        font-size: 12px;
+    }
+
+    .section-title h2 {
+        font-size: 26px;
+    }
+
+    /* Navbar CSS */
+    .navbar-brand img {
+        max-width: 150px;
+    }
+
+    .main-nav .navbar {
+        padding-top: 0;
+        padding-bottom: 5px;
+    }
+
+    .navbar-toggler {
+        color: #fff;
+        font-size: 24px;
+    }
+
+    .navbar-toggler:focus {
+        box-shadow: 0 0 0 0 transparent;
+    }
+
+    .main-nav {
+        padding:0px;
+    }
+
+    .main-nav .navbar .navbar-nav .nav-item .nav-link {
+        padding: 10px 0;
+        font-size: 14px;
+    }
+
+    .main-nav .navbar .theme-btn {
+        margin-left: 0;
+    }
+
+    /* Banner CSS */
+
+    .banner-section {
+        height: 100%;
+        padding-top: 180px;
+        padding-bottom: 375px;
+    }
+
+    .banner-text {
+        text-align: center;
+    }
+    .banner-text h2 {
+        font-size: 32px;
+    }
+
+    .banner-illustration {
+        right: 0;
+        left: 0;
+    }
+
+    .banner-illustration .illustration-img {
+        min-width: 320px;
+        height: 500px;
+        max-width: 320px;
+        margin: auto;
+    }
+
+    .illustration-img img:nth-child(1),
+    .illustration-img img:nth-child(2){
+        max-width: 130px;
+    }
+    .illustration-img img:nth-child(4) {
+        top: 40%;
+        max-width: 200px;
+    }
+
+    .illustration-img img:nth-child(3){
+        left: 40%;
+        top: 75%;
+        max-width: 50px;
+    }
+
+    .banner-text h2 .circle::before {
+        left: -8px;
+        top: -6px;
+        width: 120%;
+    }
+   
+
+    /* Why CSS */
+    .why-section {
+        padding-top: 100px;
+        padding-bottom: 20px;
+    }
+    .why-text {
+        text-align: center;
+    }
+
+    .why-bg {
+        width: 320px;
+        height: 320px;
+        top: inherit;
+        bottom: 20px;
+        left: 0;
+        right: 0;
+    }
+
+    .why-img {
+        width: 280px;
+        margin: auto;
+        padding-top: 70px;
+        height: 350px;
+    }
+
+    .why-illustration img:nth-child(1) {
+        left: 20px;
+        max-width: 140px;
+    }
+
+    .why-illustration img:nth-child(2) {
+        right: 10%;
+        max-width: 100px;
+        top: 20px;
+    }
+   
+    .why-illustration img:nth-child(3) {
+        top: -30px;
+        max-width: 30px;
+    }
+
+    /* Brand CSS */
+    .brand-section {
+        padding-top: 70px;
+    }
+
+    .brand-box {
+        margin-bottom: 60px;
+    }
+
+    .brand-box .brand-icon {
+        max-width: 60px;
+        margin: 0 auto 21px;
+    }
+
+    /* Offer Img */
+    .offer-illustration img:nth-child(6),
+    .offer-illustration img:nth-child(7),
+    .offer-illustration img:nth-child(8) {
+        display: none;
+    }
+
+    .offer-illustration img {
+        margin: 0 0px;
+        max-width: 130px;
+    }
+
+    .offer-section {
+        padding: 50px 0;
+    }
+
+    /* Service CSS */
+    .service-section {
+        padding: 50px 0;
+    }
+
+    .service-bg {
+        width: 320px;
+        height: 320px;
+        display: none;
+     }
+ 
+    .service-img {
+        width: 250px;
+        margin: auto;
+        height: 300px;
+    }
+
+    .service-text {
+        text-align: center;
+    }
+
+
+    /* Scale CSS */
+    .scale-section {
+        padding-top: 50px;
+    }
+
+    /* Scale CSS */
+    .scale-illustration {
+        height: 250px;
+    }
+
+    .scale-illustration img:nth-child(2) {
+        bottom: 6%;
+        left: 25px;
+        max-width: 80px;
+    }
+
+    .scale-illustration img:nth-child(3) {
+        bottom: 21%;
+        left: 0px;
+        max-width: 124px;
+    }
+
+    /* Team CSS */
+    .team-section {
+        padding: 50px 0;
+    }
+
+    .team-box .team-text h3 {
+        font-size: 15px !important;
+    }
+
+    .team-box .team-text p {
+        font-size: 9px !important;
+    }
+
+    /* Meeting */
+    .calendar {
+        min-width: 300px;
+    }
+
+    .meeting-section {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .meeting-text .meeting-top p {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .meeting-text .meeting-top h3 {
+        margin-bottom: 10px;
+    }
+
+    .meeting-text .meeting-top h4 {
+        font-size: 20px;
+    }
+
+    .meeting-text p {
+        margin: 0 auto 20px;
+    }
+
+    .meeting-text p {
+        text-align: center
+    }
+
+    /* Question CSS */
+    .question-section {
+        clip-path: none;
+        padding: 50px 0;
+    }
+
+    .question-section p {
+        font-size: 14px;
+    }
+}
+
+
+@media only screen and (min-width:768px) and (max-width:991px) {
+    p {
+        font-size: 18px !important;
+    }
+
+    .theme-btn a {
+        padding: 14px 22px;
+        font-size: 12px;
+    }
+
+    .section-title h2 {
+        font-size: 26px;
+    }
+
+    /* Navbar CSS */
+    .navbar-brand img {
+        max-width: 150px;
+    }
+
+    .main-nav .navbar {
+        padding-top: 0;
+        padding-bottom: 5px;
+    }
+
+    .navbar-toggler {
+        color: #fff;
+        font-size: 24px;
+    }
+
+    .navbar-toggler:focus {
+        box-shadow: 0 0 0 0 transparent;
+    }
+
+    .main-nav {
+        padding:0px;
+    }
+
+    .main-nav .navbar .navbar-nav .nav-item .nav-link {
+        padding: 10px 0;
+        font-size: 14px;
+    }
+
+    .main-nav .navbar .theme-btn {
+        margin-left: 0;
+    }
+
+    /* Banner CSS */
+
+    .banner-section {
+        height: 100%;
+        padding-top: 130px;
+        padding-bottom: 100px;
+    }
+
+    .banner-text h2 {
+        font-size: 32px;
+    }
+
+    .banner-illustration {
+        right: 0;
+        left: 0;
+    }
+
+    .banner-illustration .illustration-img {
+        min-width: 320px;
+        height: 500px;
+        max-width: 455px;
+        margin: 0 0 0 auto;
+    }
+
+    .illustration-img img:nth-child(1) {
+        left: 15%
+    }
+
+    .illustration-img img:nth-child(2) {
+        right: 20%;
+    }
+
+    .illustration-img img:nth-child(1),
+    .illustration-img img:nth-child(2){
+        max-width: 130px;
+    }
+    .illustration-img img:nth-child(4) {
+        top: 40%;
+        max-width: 200px;
+    }
+
+    .illustration-img img:nth-child(3){
+        left: 40%;
+        top: 75%;
+        max-width: 50px;
+    }
+
+    .banner-text h2 .circle::before {
+        left: -8px;
+        top: -6px;
+        width: 120%;
+    }
+
+     /* Why CSS */
+     .why-section {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .why-bg {
+        width: 320px;
+        height: 320px;
+        top: 25%;
+        bottom: 20px;
+        left: 0;
+        right: 0;
+    }
+
+    .why-img {
+        width: 280px;
+        margin: auto;
+        padding-top: 70px;
+        height: 350px;
+    }
+
+    .why-illustration img:nth-child(1) {
+        left: 20px;
+        max-width: 140px;
+    }
+
+    .why-illustration img:nth-child(2) {
+        right: 10%;
+        max-width: 100px;
+        top: 20px;
+    }
+   
+    .why-illustration img:nth-child(3) {
+        top: -30px;
+        max-width: 30px;
+    }
+
+
+    /* Offer Img */
+    .offer-illustration img:nth-child(6),
+    .offer-illustration img:nth-child(7),
+    .offer-illustration img:nth-child(8) {
+        display: none;
+    }
+
+    .offer-illustration img {
+        margin: 0 0px;
+        max-width: 130px;
+    }
+
+    .offer-section {
+        padding: 50px 0;
+    }
+
+    /* Service CSS */
+    .service-section {
+        padding-top: 100px;
+        padding-bottom: 70px;
+    }
+
+    /* Scale CSS */
+    .scale-section {
+        padding-top: 70px;
+    }
+
+    .scale-illustration img:nth-child(2) {
+        bottom: 7%;
+        left: 11%;
+        max-width: 170px;
+    }
+
+    .scale-illustration img:nth-child(3) {
+        bottom: 22%;
+        left: 50px;
+        max-width: 220px;
+    }
+
+    /* Meeting */
+    .meeting-section {
+        padding: 100px 0;
+    }
+
+    /* Question CSS */
+    .question-section {
+        padding-top: 80px;
+        padding-bottom: 50px;
+    }
+}
+
+@media only screen and (min-width:992px) and (max-width:1199px) {
+    p {
+        font-size: 20px !important;
+    }
+
+    .theme-btn a {
+        padding: 14px 22px;
+        font-size: 12px;
+    }
+
+    .section-title h2 {
+        font-size: 26px;
+    }
+
+    /* Navbar CSS */
+    .navbar-brand img {
+        max-width: 150px;
+    }
+
+    .main-nav .navbar {
+        padding-top: 0;
+        padding-bottom: 5px;
+    }
+
+    .navbar-toggler {
+        color: #fff;
+        font-size: 24px;
+    }
+
+    .navbar-toggler:focus {
+        box-shadow: 0 0 0 0 transparent;
+    }
+
+    .main-nav .navbar .navbar-nav .nav-item .nav-link {
+        font-size: 18px;
+    }
+
+    .main-nav .navbar .theme-btn {
+        margin-left: 0;
+    }
+
+    /* Banner CSS */
+
+    .banner-section {
+        height: 100%;
+        padding-top: 180px;
+        padding-bottom: 150px;
+    }
+
+    .banner-text h2 {
+        font-size:48px;
+    }
+
+    .banner-illustration {
+        right: 0;
+        left: 0;
+    }
+
+    .banner-illustration .illustration-img {
+        min-width: 320px;
+        height: 500px;
+        max-width: 500px;
+        margin: 0 0 0 auto;
+    }
+
+    .illustration-img img:nth-child(1) {
+        left: 15%
+    }
+
+    .illustration-img img:nth-child(2) {
+        right: 20%;
+    }
+
+    .illustration-img img:nth-child(1),
+    .illustration-img img:nth-child(2){
+        max-width: 130px;
+    }
+    .illustration-img img:nth-child(4) {
+        top: 40%;
+        max-width: 200px;
+    }
+
+    .illustration-img img:nth-child(3){
+        left: 40%;
+        top: 75%;
+        max-width: 50px;
+    }
+
+    .banner-text h2 .circle::before {
+        left: -8px;
+        top: -6px;
+        width: 120%;
+    }
+
+     /* Why CSS */
+     .why-section {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .why-bg {
+        width: 320px;
+        height: 320px;
+        top: 25%;
+        bottom: 20px;
+        left: 0;
+        right: 0;
+    }
+
+    .why-img {
+        width: 280px;
+        margin: auto;
+        padding-top: 70px;
+        height: 350px;
+    }
+
+    .why-illustration img:nth-child(1) {
+        left: 20px;
+        max-width: 140px;
+    }
+
+    .why-illustration img:nth-child(2) {
+        right: 10%;
+        max-width: 100px;
+        top: 20px;
+    }
+   
+    .why-illustration img:nth-child(3) {
+        top: -30px;
+        max-width: 30px;
+    }
+
+
+    /* Offer Img */
+    .offer-illustration img:nth-child(8) {
+        display: none;
+    }
+
+    .offer-illustration img {
+        margin: 0 0px;
+        max-width: 130px;
+    }
+
+    .offer-section {
+        padding: 50px 0;
+    }
+
+    /* Service CSS */
+    .service-section {
+        padding-top: 100px;
+        padding-bottom: 70px;
+    }
+
+    /* Scale CSS */
+    .scale-section {
+        padding-top: 70px;
+    }
+
+    .scale-illustration img:nth-child(2) {
+        bottom: 14%;
+        left: 20%;
+        max-width: 170px;
+    }
+
+    .scale-illustration img:nth-child(3) {
+        bottom: 31%;
+        left: 110px;
+        max-width: 230px;
+    }
+
+    /* Meeting */
+    .meeting-section {
+        padding: 100px 0;
+    }
+
+    /* Question CSS */
+    .question-section {
+        padding-top: 80px;
+        padding-bottom: 50px;
+    }
+}
+
+@media only screen and (min-width:1200px) and (max-width: 1399px) {
+    p {
+        font-size: 20px !important;
+    }
+
+    .theme-btn a {
+        padding: 14px 22px;
+        font-size: 12px;
+    }
+
+    .section-title h2 {
+        font-size: 26px;
+    }
+
+    /* Navbar CSS */
+    .navbar-brand img {
+        max-width: 150px;
+    }
+
+    .main-nav .navbar {
+        padding-top: 0;
+        padding-bottom: 5px;
+    }
+
+    .navbar-toggler {
+        color: #fff;
+        font-size: 24px;
+    }
+
+    .navbar-toggler:focus {
+        box-shadow: 0 0 0 0 transparent;
+    }
+
+    .main-nav .navbar .navbar-nav .nav-item .nav-link {
+        font-size: 18px;
+    }
+
+    .main-nav .navbar .theme-btn {
+        margin-left: 0;
+    }
+
+    /* Banner CSS */
+    .banner-text h2 {
+        font-size: 55px;
+    }
+
+    .banner-illustration {
+        right: 2%;
+    }
+
+    .banner-illustration .illustration-img {
+        height: 500px;
+        min-width: 690px;
+    }
+
+    .banner-text h2 .circle::before {
+        left: -8px;
+        top: -6px;
+        width: 120%;
+    }
+
+    /* Scale CSS */
+    .scale-illustration img:nth-child(2) {
+        bottom: 11%;
+        left: 19%;
+    }
+}
+
