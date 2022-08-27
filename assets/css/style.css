@@ -153,6 +153,10 @@ img {
     background: #7423C6;
 }
 
+.banner-text .theme-btn a:hover {
+    background: #561f8e;
+}
+
 .banner-illustration {
     position: absolute;
     bottom: 15px;
@@ -238,6 +242,10 @@ img {
 .why-text .theme-btn a {
     margin-top: 20px;
     background: #7423C6;
+}
+
+.why-text .theme-btn a:hover {
+    background: #561f8e;
 }
 
 .why-bg {
@@ -377,6 +385,10 @@ img {
 .service-text .theme-btn a {
     margin-top: 20px;
     background: #7423C6;
+}
+
+.service-text .theme-btn a:hover {
+    background: #561f8e;
 }
 
 .service-img {
