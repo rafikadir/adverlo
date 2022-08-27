@@ -1,8 +1,7 @@
 // Navbar Shrink
 $(window).on("scroll",function(){
     $(this).scrollTop()>100?$(".main-nav").addClass("nav-shrink"):$(".main-nav").removeClass("nav-shrink");
- });
-
+});
 
 // Back to top
 $(document).ready(function(){
@@ -21,6 +20,11 @@ $(document).ready(function(){
     }, 400);
     return false;
 });
+
+ //Pre Loader
+ $(window).on('load',function(){
+    $(".loader-content").fadeOut(2000);
+  })
 
 // AOS
 AOS.init();
